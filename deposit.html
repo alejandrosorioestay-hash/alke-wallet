@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="background-color: azure;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="livestrap.css">
+    <title>Depositar</title>
+
+</head>
+<!--Se establece una barra de navegación que puede llevar a Menú principal, movimientos o cerrar sesión-->
+<body class="bg-light" style="padding: 20px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alke Wallet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Menuprincipal.html">Menú Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transactions.html">Movimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="walletejercicio.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--Diseño responsivo para tarjeta utilizando grillas col-11 y col-md-6 y limitando el máximo de la tarjeta para pantallas grandes con max-width: 500px -->
+    <div class="container card text-center mt-5 mx-auto col-11 col-md-6" style="max-width: 500px;">
+        <div class="card-body p-4 row justify-content-center ">
+            <h5 class="card-title">Realizar un Depósito</h5>
+            <p class="card-text">Ingresa la cantidad a depositar en pesos chilenos</p>
+            <Form id="depositForm">
+                <div class="mb-3">
+                    <label for="depositAmount">Monto a depositar</label>
+                    <input type="number" class="form-control" id="depositAmount" placeholder="Ingrese Monto">
+                </div>
+                <button type="submit" class="btn btn-primary" id="realizardeposito">Depositar</button>
+                <a href="Menuprincipal.html" class="btn btn-success" >Volver al menú principal</a>
+            </Form>
+        </div>
+        <div class="card-footer text-body-secondary">
+            Experiencia Alke Wallet
+        </div>
+    </div>
+
+
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="deposit.js"></script>
+</body>
+
+</html>
